@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Walter Pitts</title>
+	<link rel="stylesheet" href="light.css">
+</head>
+<body>
+	<div id="walter_pitts">
+		<div class="topbar">
+			<button onclick="change_page('walter_pitts')" class="topbar_buttons" id="active_button"><strong>Walter Pitts</strong></button>
+			<button onclick="change_page('demo')" class="topbar_buttons"><strong>Neural Network Demo</strong></button>
+			<button onclick="change_mode()" class="mode_switch"><img class="resize"/></button>
+		</div>
+
+		<div class="content">
+			<div class=content_block id="content0">
+				<h1 class="heading">Walter Pitts (1923-1969)</h1>
+				<p class="text_content">Made significant contributions to neuroscience and artificial intelligence</p>
+				<br>
+			</div>
+
+			<br>
+			<br>
+			<br>
+
+			<div class=content_block id="content1">
+				<h1 class="heading">"in no uncertain sense the genius of the group … when you asked him a question, you would get back a whole textbook."</h1>
+				<img src="pitts_image.jpg" id="pitts_image">
+			</div>
+
+			<br>
+
+			<div class=content_block id="content2">
+				<h1 class="heading">Background Information</h1>
+				
+				<br>
+				
+				<table id="table1">
+					<tr>
+						<th>Date of Birth</th>
+						<td>Born on April 23rd, 1923</td>
+					</tr>
+					<tr>
+						<th>Birthplace</th>
+						<td>Born in Detroit, Michigan</td>
+					</tr>
+					<tr>
+						<th>Parents</th>
+						<td>Walter Pitts senior and Marie Pitts</td>
+					</tr>
+					<tr>
+						<th>Age at Death</th>
+						<td>46 years</td>
+					</tr>
+					<tr>
+						<th>Date of Death</th>
+						<td>Died May 14, 1969</td>
+					</tr>
+				</table>
+				
+				<br>
+
+				<p class="text_content">Walter Pitts’ father was a boiler-maker in Detroit. Growing up, Pitts was never understood by his family and friends due to his academic interests in logic, math and languages. He soon learned Greek and Latin and self taught himself logic and math. At the age of 12 he wrote a letter to Bertrand Russell pointing out errors in his book: Principia Mathematica. Russell invited him to study at the University of Cambridge but Pitts did not take the opportunity. At the age of 15 Pitts ran away from home to attend Russell’s lectures at the University of Chicago. Unfortunately, Pitts never enrolled as a student and didn't get a degree, although he got many invitations from universities.</p>
+			</div>
+
+			<br>
+
+			<div class=content_block id="content3">
+				<h1 class="heading">Areas of Expertise</h1>
+				<p class="text_content">Walter Pitts was mainly self-taught. He had learned logic and mathematics through books at a very early age. He was an expert in cybernetics, artificial intelligence and computational neuroscience. In his early life, he was mentored and inspired by Bertrand Russell. Pitts greatest achievement was writing the influential paper "A Logical Calculus of Ideas Immanent in Nervous Activity" with his friend Warren McCulloch. He gained recognition after his death for his contributions to artificial intelligence and neural networks, which continue to influence the fields today.</p>
+			</div>
+
+			<br>
+
+			<div class=content_block id="content4">
+				<h1 class="heading">Impact on the World</h1>
+				<p class="text_content">Walter Pitts' greatest impact on the world was his work on the McCulloch-Pitts neuron model which continues to influence modern neural network structures. He is viewed as a brilliant scientist who did not get enough recognition and did not explore his full potential. Since his work was not widely recognized during his lifetime, he did not receive any awards. Pitts’ got to collaborate with well known people, changing his life and career. Unfortunately, Pitts’ faced many personal problems and died without getting much recognition. His work had a lasting impact on the development of artificial neural networks more than 50 years after his death. Even today Walter Pitts’ work is used as a reference to modern artificial intelligence and neural networks.</p>
+			</div>
+
+			<br>
+
+			<div class=content_block id="content4">
+				<h1 class="heading">Sources</h1>
+				<a class="text_content" href="https://en.wikipedia.org/wiki/Walter_Pitts">Walter Pitts - Wikipedia</a>
+				<br>
+				<br>
+				<a class="text_content" href="https://nautil.us/the-man-who-tried-to-redeem-the-world-with-logic-235253/">The Man Who Tried to Redeem the World with Logic - Nautilus</a>
+				<br>
+				<br>
+				<a class="text_content" href="https://home.csulb.edu/~cwallis/artificialn/walter_pitts.html">home.csulb.edu/~cwallis/artificialn/walter_pitts.html</a>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+	</div>
+
+
+	<div id="demo">
+		<div class="topbar">
+			<button onclick="change_page('walter_pitts')" class="topbar_buttons"><strong>Walter Pitts</strong></button>
+			<button onclick="change_page('demo')" class="topbar_buttons" id="active_button"><strong>Neural Network Demo</strong></button>
+			<button onclick="change_mode()" class="mode_switch"><img class="resize"/></button>
+		</div>
+	
+		<div class="content">
+			<div class=content_block id="content5">
+				<div id="demo_container">
+					<div id="button_container">
+						<button onclick="predict()" class="demo_buttons">Predict</button>
+						<button onclick="reset()" class="demo_buttons">Reset</button>
+					</div>
+
+					<canvas id="canvas" width="500" height="500"></canvas>
+					<canvas id="offscreenCanvas" width="28" height="28"></canvas>
+
+					<div id="text_container">
+						<p class="demo_text">Draw an uppercase A or B then press Predict.</p>
+						<p id="prediction">A</p>
+						<p class="demo_text" id="confidence">Confidence: </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <script src="data.js"></script>
+    <script src="network.js"></script>
+	<script src="fnn.js"></script>
+	<script src="drawing.js"></script>
+	<script src="pages.js"></script>
+</body>
+</html>

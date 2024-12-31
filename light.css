@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+
+.topbar {
+    position: fixed;
+    background-color: #ebebeb;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    transition: 0.5s;
+}
+
+.topbar_buttons {
+    background-color: #ebebeb;
+    display: block;
+    float: left;
+    color: black;
+    padding: 50px;
+    text-decoration: none;
+    font-size: 17px;
+    border: none;
+    transition: 0.5s;
+}
+
+.topbar_buttons:hover {
+    font-size: 21px;
+    padding: 48px;
+    transition: 0.5s;
+}
+
+#active_button {
+    background-color: #0089d9;
+    transition: 0.5s;
+}
+
+.content {
+    margin-top: 142px;
+	padding: 0;
+    transition: 0.5s;
+}
+
+.content_block {
+    display: block;
+    transition: 0.5s;
+}
+
+.text_content {
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 24px;
+	color: black;
+    line-height: 36px;
+    transition: 0.5s;
+}
+
+.heading {
+    padding: 25px;
+    margin-left: 100px;
+    font-size: 35px;
+	color: black;
+    transition: 0.5s;
+}
+
+#background {
+	z-index: -1000;
+	background-color: #ffffff;
+	height: 100px;
+	width: 100px;
+    transition: 0.5s;
+}
+
+.mode_switch {
+    display: block;
+    margin-top: 15px;
+    margin-right: 50px;
+    float: right;
+    text-decoration: none;
+    border: none;
+    background-color: #ebebeb;
+    transition: 0.5s;
+}
+
+.resize {
+    width: 80px;
+    height: auto;
+    content: url("light.png");
+    transition: 0.5s;
+}
+
+.resize:hover {
+    width: 90px;
+    height: auto;
+    transition: 0.5s;
+}
+
+#walter_pitts {
+    display: auto;
+    transition: 0.5s;
+}
+
+#demo {
+    display: none;
+    transition: 0.5s;
+}
+
+#table1 {
+    border-collapse: collapse;
+    width: calc(100vw - 400px);
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 24px;
+	color: black;
+    border: 2px solid #0089d9;
+    transition: 0.5s;
+}
+
+#table1 th, #table1 td {
+    padding: 18px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+#table1 th:nth-child(odd), #table1 td:nth-child(odd) {
+    background-color: #ebebeb;
+    transition: 0.5s;
+}
+
+#table1 th:nth-child(even), #table1 td:nth-child(even) {
+    background-color: #ebebeb;
+    transition: 0.5s;
+}
+
+#table1 tr:nth-child(even) th:nth-child(odd), #table1 tr:nth-child(even) td:nth-child(odd) {
+    background-color: white;
+    transition: 0.5s;
+}
+
+#table1 tr:nth-child(even) th:nth-child(even), #table1 tr:nth-child(even) td:nth-child(even) {
+    background-color: white;
+    transition: 0.5s;
+}
+
+#content0 {
+    background-color: #ebebeb;
+    text-align: center;
+    border-radius: 30px;
+    width: calc(100vw - 200px);
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 2px solid #0089d9;
+    transition: 0.5s;
+}
+
+#content0 .heading {
+    padding: 25px;
+    margin-left: 0px;
+    transition: 0.5s;
+}
+
+#content0 .text_content {
+    padding: 25px;
+    margin: 0 auto;
+	color: black;
+    transition: 0.5s;
+}
+
+#content1 {
+    background-color: #ebebeb;
+    text-align: center;
+    border-radius: 30px;
+    display: flex;
+    width: calc(100vw - 200px);
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 50px;
+    border: 2px solid #0089d9;
+    transition: 0.5s;
+}
+
+#content1 .heading {
+    align-self: center;
+    padding: 25px;
+    margin: 0 auto;
+    font-size: 28px;
+    transition: 0.5s;
+}
+
+#pitts_image {
+    height: 400px;
+    width: auto;
+    padding: 25px;
+    transition: 0.5s;
+}
+
+.demo_buttons {
+    background-color: #0089d9;
+    color: black;
+    text-decoration: none;
+    width: 200px;
+    height: 100px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.demo_buttons:hover {
+    background-color: hsl(202, 100%, 66%);
+    transition: 0.5s;
+}
+
+#content5 {
+    width: calc(100vw - 100px);
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 100%;
+    transition: 0.5s;
+}
+
+#button_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+#demo_container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    transition: 0.5s;
+}
+
+#text_container {
+    display: flex;
+    width: 500px;
+    height: 420px;
+    padding: 40px;
+    text-align: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.demo_text {
+    font-size: 24px;
+	color: black;
+    transition: 0.5s;
+    margin: 0px;
+    transition: 0.5s;
+}
+
+#prediction {
+    font-size: 300px;
+    margin: 0px;
+    color: white;
+    transition: 0.5s;
+}
