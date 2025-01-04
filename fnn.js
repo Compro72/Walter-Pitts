@@ -172,8 +172,6 @@ function predict() {
 	} else {
 		document.getElementById("prediction").style.color = "#cccccc";
 	}
-
-	document.getElementById("confidence").innerText = "Confidence: " + Math.round(((Math.max(...network.outputs[network.outputs.length - 1]) - Math.min(...network.outputs[network.outputs.length - 1]))/(Math.max(...network.outputs[network.outputs.length - 1]) + Math.min(...network.outputs[network.outputs.length - 1])))*100) + "%";
 }
 
 function loadNetwork(savedData) {
