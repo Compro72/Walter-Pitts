@@ -1,3 +1,5 @@
+
+
 class Neuron {
 	constructor(numberOfInputs, savedData=null) {
 		if(savedData==null) {
@@ -179,10 +181,11 @@ function loadNetwork(savedData) {
 }
 
 //This was the code that trained the model. The "network" object was copied from the console and pasted in network.js
-/*
-let network = new NeuralNetwork(784, [100, 2]); //3 layers with 784 inputs, 100 neurons in the hidden layer and 2 outputs.
-network = train(network, trainingData, 1000, 0.03); //1000 epoches with a 0.03 learning rate.
-console.log(network);
-*/
+
+//This was the code that trained the model. The object was copied from the console and pasted in network.js
+
+//let network = new NeuralNetwork(784, [100, 2]); //3 layers with 784 inputs, 100 neurons in the hidden layer and 2 outputs.
+//network = train(network, trainingData, 1000, 0.03); //1000 epoches with a 0.02 learning rate.
+//console.log(network);
 
 let network = loadNetwork(savedNetwork);
